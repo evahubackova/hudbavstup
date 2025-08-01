@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jednoduchá stránka se zvukem</title>
+    <!-- Tailwind CSS je použit pro minimalistický styling těla stránky -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!--
+        Tento audio tag je vložen do těla stránky.
+        Atribut "preload="auto"" zajistí, že se zvuk začne načítat hned po načtení stránky.
+        Atribut "src" musíte nahradit cestou k vašemu audio souboru.
+        Například: src="hudba/moje_hudba.mp3"
+        Tento prvek je sám o sobě neviditelný, pokud nepřidáte atribut "controls".
+    -->
+    <audio id="mojeHudba" src="https://freesound.org/s/456969/.mp3" preload="auto"></audio>
+    
+    <div class="text-center">
+        <h1 class="text-3xl font-bold mb-4">Stránka je připravena</h1>
+        <p class="text-lg">Audio prvek je vložen a čeká na spuštění přes JavaScript.</p>
+    </div>
+
+</body>
+</html>
